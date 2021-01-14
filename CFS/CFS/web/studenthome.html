@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>MAIT Feedback</title>
+<link href='http://fonts.googleapis.com/css?family=Trocchi' rel='stylesheet' type='text/css' />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+    <%
+        if (request.getParameter("m1") != null) {%>
+    <script>alert('Login Success');</script>
+    <%}
+        if (request.getParameter("m6") != null) {%>
+    <script>alert('#');</script> 
+
+    <%}
+    %>
+<body>
+<div class="wrapper">
+  <div class="logo">MAIT for all</div>
+  <div class="menu">
+    <ul>
+      <li><a href="studenthome.html" class="active">Home</a></li>
+      <li><a href="sviewprofile.html" >View Profile</a></li>
+      <li><a href="sviewcollege.html">View College</a></li>
+      <li><a href="sviewplacements.html">View Placements</a></li>
+      <li><a href="sfeedback.html">Feedback</a></li>
+      <li><a href="logout.html">Logout</a></li>
+      
+      
+    </ul>
+  </div>
+  <div class="header">
+      <br>
+    
+  </div>
+  <div class="banner-container">
+    <div class="banner-top"></div>
+    <div class="banner-middle"> <img src="https://it.mait.ac.in/images/mait-1.jpg" width="930px" height="400px" align="banner-middle"  alt="themedemic" /> </div>
+    <div class="banner-bottom"></div>
+  </div>
+</div>
+   <%    
+    String user = session.getAttribute("username").toString();
+    %>
+    <center><h1>Welcome <%=user%></h1></center>  
+
+
+<div class="footer">
+  <div class="copy-rights">by YASH HANDA</a></div>
+</div>
+</body>
+</html>

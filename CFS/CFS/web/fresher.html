@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>MAIT Feedback</title>
+<link href='http://fonts.googleapis.com/css?family=Trocchi' rel='stylesheet' type='text/css' />
+<link href="css/styles.css" rel="stylesheet" type="text/css" />
+</head>
+    <%
+        if (request.getParameter("m1") != null) {%>
+    <script>alert('Registration Success');</script>
+    <%}
+        if (request.getParameter("m2") != null) {%>
+    <script>alert('Login Failed');</script> 
+
+    <%}
+    %>
+<body>
+<div class="wrapper">
+  <div class="logo">MAIT for all</div>
+  <div class="menu">
+    <ul>
+      <li><a href="index.html" >Home</a></li>
+      <li><a href="admin.html">Admin</a></li>
+      <li><a href="student.html">Student</a></li>
+      <li><a href="fresher.html" class="active">New User</a></li>
+      <li><a href="about.html">About Us</a></li>
+    </ul>
+  </div>
+  <div class="header">
+      <br>    <br>    <br>    <br>
+    
+    <div class="header-button"><a href="#">New User Login</a> </div>
+    <br>
+  </div>
+  <center>
+    
+    <form action="http://localhost/project/sfs/" method="post" id="leavereply">
+                       
+        <label><b><font color="black">Username</font></b></label>
+                        <input type="text" placeholder="Enter Username" name="username" required>
+                            <br><br>
+
+                        <label><b><font color="black">Password</font></b></label>
+                        <input type="password" placeholder="Enter Password" name="password" required>
+                            <br>
+                       <br>   <br>
+                        <button type="submit">Login</button>
+                        <button type="button" class="cancelbtn">Cancel</button>
+    
+                        </form></center>
+  
+</div>
+    <br><br>
+            <center>    <a href="https://cse.mait.ac.in/cms"><font size="4">Click Here for Registration</a></center><br>    <br>
+
+<div class="footer">
+ <div class="copy-rights">by YASH HANDA</a></div>
+</div>
+</body>
+</html>
